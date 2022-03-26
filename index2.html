@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            margin-top: 7%;
+            display: flex;
+            flex-direction: column;
+            width: 850px;
+
+        }
+        .addField {
+            display: flex;
+            width: 100%;
+            padding: 20px;
+            margin-bottom: 15px;
+            background-color: #eaeaea;
+            justify-content: space-around;
+            border-radius: 7px;
+        }
+
+        .addTask {
+            height: 40px;
+            width: 80%;
+            padding: 4px 30px;
+            margin-right: 50px;
+            border: none;
+            outline: none;
+            border-radius: 7px;
+            font-size: 25px;
+            font-family: sans-serif;
+        }
+
+        .add,
+        .clear {
+            margin-left: -20px;
+            width: 170px;
+            background-color: rgba(255, 0, 0, .7);
+            color: white;
+            font-weight: 500;
+            font-size: 15px;
+            border: none;
+            border-radius: 7px;
+            transition: 200ms ease-out;
+        }
+
+        .clear {
+            margin-left: 25px; 
+        }
+
+        .add:hover {
+            background-color: rgba(255, 0, 0, 1);
+        }
+
+        .taskField {
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
+            width: 850px;
+            background-color: #eaeaea;
+            margin: 15px 0;
+            border-radius: 7px;
+            padding: 15px 20px 0 20px;
+        }
+
+        .task {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            border-radius: 7px;
+            margin-bottom: 15px;
+            padding: 0 20px;
+        }
+        
+        .delTask {
+            height: 35px;
+            width: 75px;
+            background-color: rgba(255, 0, 0, .7);
+            color: white;
+            font-weight: 500;
+            font-size: 15px;
+            border-radius: 7px;
+            border: none;
+            transition: 200ms ease-out;
+        }
+
+        .delTask:hover,
+        .clear:hover {
+            background-color: rgba(255, 0, 0, 1);
+        }
+
+        .task p {
+            font-family: sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <div class="addField">
+            <input class="addTask" type="text">
+            <button class="add">Add Task</button>
+            <button class="clear">Clear All</button>
+        </div>
+        <div class="taskField">
+            <!-- <div class="task">
+                <p>Test</p>
+                <button class="delTask">Delete</button>
+            </div> -->
+        </div>
+    </div>
+<script src="main2.js"></script>
+</body>
+</html>
